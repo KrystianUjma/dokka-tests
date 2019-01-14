@@ -38,10 +38,10 @@ dokka {
     outputDirectory = "$buildDir/javadoc"
 }
 
-//task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
-//  outputFormat = 'javadoc'
-//  outputDirectory = "$buildDir/dokkaJavadoc"
-//}
+task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
+  outputFormat = 'javadoc'
+  outputDirectory = "$buildDir/dokkaJavadoc"
+}
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"

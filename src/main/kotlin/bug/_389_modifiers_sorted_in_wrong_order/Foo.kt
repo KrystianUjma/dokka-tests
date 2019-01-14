@@ -1,4 +1,4 @@
-package bug.modifiers_sorted_in_wrong_order_389
+package bug._389_modifiers_sorted_in_wrong_order
 
 class Foo {
 

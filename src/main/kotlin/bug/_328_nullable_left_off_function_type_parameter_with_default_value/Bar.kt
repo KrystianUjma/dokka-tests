@@ -1,4 +1,4 @@
-package bug.nullable_left_off_function_type_parameter_with_default_value_328
+package bug._328_nullable_left_off_function_type_parameter_with_default_value
 
 class Bar<T> {
     val dataList = mutableListOf<T>()
