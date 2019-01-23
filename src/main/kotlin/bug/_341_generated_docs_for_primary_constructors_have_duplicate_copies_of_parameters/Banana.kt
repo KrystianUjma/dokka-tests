@@ -10,7 +10,7 @@ package bug._341_generated_docs_for_primary_constructors_have_duplicate_copies_o
 class Banana (
         private val weight: Double,
         private val ranking: Int,
-        color: String = "yellow"
+        val color: String = "yellow"
 )
 
 
