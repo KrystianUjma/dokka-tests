@@ -34,8 +34,26 @@ dependencies {
 
 
 dokka {
-    outputFormat = 'markdown'
-    outputDirectory = "$buildDir/javadoc"
+    outputFormat = 'html'
+    outputDirectory = "$buildDir/dokkaHtml"
+
+//    sourceRoot {
+//        // Path to source root
+//        path = "src"
+//        // See platforms section of documentation
+//        platforms = ["JVM"]
+//    }
+//
+//    linkMapping {
+//        // Source directory
+//        dir = "src/main/kotlin"
+//
+//        // URL showing where the source code can be accessed through the web browser
+//        url = "https://github.com/cy6erGn0m/vertx3-lang-kotlin/blob/master/src/main/kotlin"
+//
+//        // Suffix which is used to append the line number to the URL. Use #L for GitHub
+//        suffix = "#L"
+//    }
 }
 
 task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
