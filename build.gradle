@@ -11,8 +11,8 @@ buildscript {
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-//        classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.9.19-SNAPSHOT"
-        classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.9.18"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.9.19-SNAPSHOT"
+//        classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.9.18"
     }
 }
 
@@ -43,6 +43,7 @@ dokka {
 }
 
 task dokkaMarkdown(type: org.jetbrains.dokka.gradle.DokkaTask) {
+    moduleName='test'
     outputFormat = 'markdown'
     outputDirectory = "$buildDir/dokkaMarkdown"
 }
